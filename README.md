@@ -3,21 +3,26 @@
 This repo contains image quality assesment model, that I've done as a part of pipeline model of self-checkout model. 
 
 
-Working with repo
+### Working with repo
 
-You need to clone this repo, download data and put it into local repo.
+1.	Clone this repo
+2.	Download [train data](https://drive.google.com/drive/folders/170FK3Ji1fy0TvJZreAKzGL0Y91fjUxa7?usp=sharing), [test data]() and put in local repo with appropriate relative paths 
+
+	Path to train images "/regression_task/data"
+
+	Path to test images "/data/test_images"
+3. Everything is ready for your experiments. Run train_reg.ipynb, train models and see the results.	
 Path to train data "/regression_task/data"
 Path to initial images "/data/initial_images"
 Path to test images "/data/test_images"
 
-Data
 
-The train data is located here 
-[![Google Drive](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/drive/folders/170FK3Ji1fy0TvJZreAKzGL0Y91fjUxa7?usp=sharing)
+If you want to make self-made train dataset, you can download the initial images here
 
-https://drive.google.com/drive/folders/170FK3Ji1fy0TvJZreAKzGL0Y91fjUxa7?usp=sharing
+and add your changes in creating_database.ipynb
 
-You need to download it and put into root directory.
+### Data
+
 
 If you want to make self-made train dataset, you can download the initial images here
 
