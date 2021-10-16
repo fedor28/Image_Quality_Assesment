@@ -1,12 +1,13 @@
 import numpy as np
 import cv2
 
-'''
-    This function add horizont motion blur to an image 
-'''
+
 
 def get_horizont_motion_blur(img, kernel_size = 50):
-      
+    '''
+    This function add horizont motion blur to an image 
+    '''
+    
     # Create the vertical kernel. 
     kernel_h = np.zeros((kernel_size, kernel_size)) 
 
