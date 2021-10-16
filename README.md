@@ -17,8 +17,8 @@ Metrics of models on test set (labels have range [0, 100]):
 | MAPE    | 113   | 17                         | 20            |   47               | 
 | MSE     | 753   | 78                         | 107           |   287              |
 
-Also I analyzed predictions of best estimator (Bagging of decision trees) on test set . 
-Nothing in common of outliers have been detected.
+Also, I analyzed predictions of the best estimator (Bagging of decision trees) on test set . 
+Nothing in common of outliers has been detected.
 
 ### Usage
 
@@ -33,4 +33,4 @@ Nothing in common of outliers have been detected.
 
 You can use [creating_database.ipynb](https://github.com/fedor28/Image_Quality_Assesment/blob/main/regression_task/creating_database.ipynb) for creating your self-made dataset.
 
-For example if you want apply other distortions, you can download the initial images [here](), add your changes in creating_database.ipynb and run it.
+For example, if you want to apply other distortions, you can download the initial images [here](), add your changes in creating_database.ipynb and run it.
