@@ -1,6 +1,6 @@
-# Image_Quality_Assesment
+# Image Quality Assesment
 
-This repo contains image quality assesment (IQA) model implementation. It's a part of pipeline of self-checkout model.
+This repo contains implementation of image quality assesment (IQA) model. It's a part of pipeline of self-checkout model.
 
 To make IQA regressor firstly I have generated the dataset by the next way: I take initial images from production and apply to them different distortions (gaussian, horizontal, vertical blur). The more information in []
 
