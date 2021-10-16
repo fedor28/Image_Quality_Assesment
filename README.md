@@ -1,6 +1,6 @@
 # Image Quality Assesment
 
-This repo contains implementation of image quality assesment (IQA) model. It's a part of pipeline of self-checkout model.
+This repo contains implementation of image quality assesment (IQA) model. It's a part of pipeline of self-checkout model (Model that get the video stream from supermarket checkout as input, and gives receipt for )
 
 To make IQA regressor firstly I have generated the dataset by the next way: I take initial images from production and apply to them different distortions (gaussian, horizontal, vertical blur). The more information in [database_description.md](https://github.com/fedor28/Image_Quality_Assesment/blob/main/regression_task/database%20description.md)
 
@@ -28,7 +28,7 @@ Nothing in common of outliers have been detected.
 	Path to train images "/regression_task/data"
 
 	Path to test images "/data/test_images"
-3. Everything is ready for your experiments. Run train_reg.ipynb to train models and see the results.	
+3. Everything is ready for your experiments. Run [train_reg.ipynb](https://colab.research.google.com/drive/1uv_JGRfxSgXrA6wVf4NKszkhTbK5tw3O) to train models and see the results.	
 
 
 You can use [creating_database.ipynb](https://github.com/fedor28/Image_Quality_Assesment/blob/main/regression_task/creating_database.ipynb) for creating your self-made dataset.
