@@ -6,17 +6,21 @@ To make IQA regressor firstly I have generated the dataset by the next way: I ta
 
 I mapped label for each image linearly to the degree of distortion.
 
-Then I used BRISQUE algorithm for extracting necessary statistics from image and based on this features I trained regressors.
+Then I used [BRISQUE](https://github.com/fedor28/Image_Quality_Assesment/blob/main/BRISQUE%20theory/am_asilomar_2011.pdf) algorithm for extracting necessary statistics from image and based on this features I trained regressors.
 
-For evauating model quality I used images from another production.
+For evaluating model quality I used images from another production.
 
-Results of models in the table:
-|         | SVR   | Bagging of  decision trees | |  Random Forest | 
+Metrics of models on test set:
+
+|         | SVR   | Bagging of  decision trees | Random Forest |  Gradient Boosting | 
 | ------- | ----------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | -------- |
-| MAPE    | 113   | 17                         | |  20            | 
-| MSE     | 753   | 78                         | |  107           |
+| MAPE    | 113   | 17                         | 20            |   47               | 
+| MSE     | 753   | 78                         | 107           |   287              |
 
-### Working with repo
+Also I analyzed predictions on test set of best estimator (Bagging of decision trees). 
+Nothing in common of outliers have been detected.
+
+### Usage
 
 1.	Clone this repo
 2.	Download [train data](https://drive.google.com/drive/folders/170FK3Ji1fy0TvJZreAKzGL0Y91fjUxa7?usp=sharing), [test data]() and put in local repo with appropriate relative paths 
@@ -24,21 +28,9 @@ Results of models in the table:
 	Path to train images "/regression_task/data"
 
 	Path to test images "/data/test_images"
-3. Everything is ready for your experiments. Run train_reg.ipynb, train models and see the results.	
-Path to train data "/regression_task/data"
-Path to initial images "/data/initial_images"
-Path to test images "/data/test_images"
+3. Everything is ready for your experiments. Run train_reg.ipynb to train models and see the results.	
 
 
-If you want to make self-made train dataset, you can download the initial images here
+You can use [creating_database.ipynb](https://github.com/fedor28/Image_Quality_Assesment/blob/main/regression_task/creating_database.ipynb) for creating your self-made dataset.
 
-and add your changes in creating_database.ipynb
-
-### Data
-
-
-If you want to make self-made train dataset, you can download the initial images here
-
-and run creating_database.ipynb
-
-** link
+For example if you want apply other distortions, you can download the initial images here, add your changes in creating_database.ipynb and run it.
