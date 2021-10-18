@@ -18,7 +18,7 @@ Metrics of models on test set (labels have range [0, 100]):
 | MSE     | 753   | 78                         | 107           |   287              |
 
 Also, I analyzed predictions of the best estimator (Bagging of decision trees) on test set . 
-Nothing in common of outliers has been detected.
+No commonalities have been detected in the outliers.
 
 ### Usage
 
