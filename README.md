@@ -1,8 +1,8 @@
 # Image Quality Assesment
 
-This repo contains implementation of image quality assesment (IQA) model. It's a part of pipeline of self-checkout model (Model that get the video stream from supermarket checkout as input, and output receipt for buyers)
+This repo contains implementation of image quality assesment (IQA) model. It's a part of pipeline of self-checkout model (Model that gets the video stream from supermarket checkout as input, and output receipt for buyers)
 
-To make IQA regressor firstly I have generated the dataset by the next way: I take initial images from production and apply to them different distortions (Gaussian, horizontal motion, vertical motion blur). The more information in [database_description.md](https://github.com/fedor28/Image_Quality_Assesment/blob/main/regression_task/database%20description.md)
+To make IQA regressor firstly I have generated the dataset by the next way: I take initial images from production and apply to them different distortions (Gaussian, horizontal motion, vertical motion blur). For more information follow this file [database_description.md](https://github.com/fedor28/Image_Quality_Assesment/blob/main/regression_task/database%20description.md)
 
 I mapped label for each image linearly to the degree of distortion.
 
