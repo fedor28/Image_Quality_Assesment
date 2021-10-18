@@ -28,7 +28,7 @@ No commonalities have been detected in the outliers.
 	Path to train images "/regression_task/data"
 
 	Path to test images "/data/test_images"
-3. Everything is ready for your experiments. Run [train_reg.ipynb](https://colab.research.google.com/drive/1uv_JGRfxSgXrA6wVf4NKszkhTbK5tw3O) to train models and see the results.	
+3. Everything is ready for your experiments. Run [train_reg.ipynb](https://colab.research.google.com/drive/1FaHuGQ48ReYbPIlo_XW6dXtJc_HuKBba?usp=sharing) to train models and see the results.	
 
 
 You can use [creating_database.ipynb](https://github.com/fedor28/Image_Quality_Assesment/blob/main/regression_task/creating_database.ipynb) for creating your self-made dataset.
