@@ -2,7 +2,7 @@
 
 This repo contains implementation of image quality assesment (IQA) model. It's a part of pipeline of self-checkout model (Model that gets the video stream from supermarket checkout as input, and output receipt for buyers)
 
-To make IQA regressor firstly I have generated the dataset by the next way: I take initial images from production and apply to them different distortions (Gaussian, horizontal motion, vertical motion blur). For more information follow this file [database_description.md](https://github.com/fedor28/Image_Quality_Assesment/blob/main/regression_task/database%20description.md)
+To make IQA regressor firstly I have generated the dataset by the next way: I take initial images from production and apply to them different distortions (Gaussian, horizontal motion, vertical motion blur). For more information follow this [database_description.md](https://github.com/fedor28/Image_Quality_Assesment/blob/main/regression_task/database_description.md)
 
 I mapped label for each image linearly to the degree of distortion.
 
@@ -23,7 +23,7 @@ Nothing in common of outliers has been detected.
 ### Usage
 
 1.	Clone this repo
-2.	Download [train data](https://drive.google.com/drive/folders/170FK3Ji1fy0TvJZreAKzGL0Y91fjUxa7?usp=sharing), [test data]() and put in local repo with appropriate relative paths 
+2.	Download [train data](https://drive.google.com/drive/folders/170FK3Ji1fy0TvJZreAKzGL0Y91fjUxa7?usp=sharing), [test data](https://drive.google.com/drive/folders/1vAe47Y_DnP6FOMFIdhpsMG4KSa4x5-Hh?usp=sharing) and put in local repo with appropriate relative paths 
 
 	Path to train images "/regression_task/data"
 
@@ -33,4 +33,4 @@ Nothing in common of outliers has been detected.
 
 You can use [creating_database.ipynb](https://github.com/fedor28/Image_Quality_Assesment/blob/main/regression_task/creating_database.ipynb) for creating your self-made dataset.
 
-For example, if you want to apply other distortions, you can download the initial images [here](), add your changes in creating_database.ipynb and run it.
+For example, if you want to apply other distortions, you can download the initial images [here](https://drive.google.com/drive/folders/1vAe47Y_DnP6FOMFIdhpsMG4KSa4x5-Hh?usp=sharing), add your changes in creating_database.ipynb and run it.
